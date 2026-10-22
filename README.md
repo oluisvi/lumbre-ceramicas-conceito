@@ -1,24 +1,30 @@
 # Lumbre — conceito digital
 
-Protótipo navegável, mobile-first, criado pela ServAgency para abrir uma conversa sobre uma possível vitrine digital da Lumbre.
+Protótipo mobile-first da ServAgency para apresentar as aulas de cerâmica da Lumbre. Abra `index.html` para rodar localmente; não exige build.
 
-Abra `index.html` em um navegador. O projeto é estático, sem etapa de build. Tipografia web carrega via Google Fonts; fontes alternativas entram quando não há conexão.
+## Três caminhos em uma página
 
-## Direção visual
+O seletor fixo alterna entre três estruturas completas:
 
-A ideia visual parte de “Lumbre” como calor e matéria: argila de forno, azul de esmalte e composição editorial assimétrica. A ilustração principal e as três formas do catálogo são SVGs criados para este estudo; não representam peças reais.
+1. **Ritual** — página editorial de marca, com abertura fotográfica, formatos e etapas da peça.
+2. **Caderno** — narrativa sequencial do processo, com índice lateral e composição de revista.
+3. **Escolha** — comparador interativo; ao selecionar uma aula, o painel atualiza descrição, valor e link para perguntar datas.
 
-O seletor permite experimentar três atmosferas: Brasa azul, Forno aberto e Jardim mineral. É possível escolher uma, misturar elementos ou pedir outra direção.
+As opções podem ser escolhidas, combinadas ou alteradas. O seletor anuncia a mudança para leitor de tela, respeita movimento reduzido e os blocos entram com transições suaves.
 
-## Interações
+## Informações utilizadas
 
-- Navegação por âncoras.
-- Filtros dos estudos por categoria ilustrativa.
-- Troca entre três direções visuais.
-- Estados de foco por teclado e suporte a movimento reduzido.
+Os formatos e valores foram compartilhados pela Lumbre via WhatsApp em 22/10/2026: Experiência R$ 190; Experiência completa R$ 300; mensalidade R$ 500/4 aulas. Confira as condições completas no protótipo. Valores podem mudar.
 
-## Limites
+## Imagens
 
-O material disponível identifica “Lumbre — Cerâmicas nada básicas” em São José dos Campos. Não foi possível confirmar perfil oficial, catálogo, detalhes das peças, processo de encomenda, horário, endereço, preços ou identidade visual atual. O protótipo não inventa essas informações; conteúdo, fotos, catálogo, contato e fluxo precisam ser confirmados antes de uso comercial.
+As três fotografias em `assets/` foram geradas para este estudo, não são fotos do ateliê nem de produtos Lumbre. A interface sinaliza isso junto às imagens. Elas foram otimizadas em WebP para o uso mobile.
 
-Este é um conceito da ServAgency, não um site oficial ou proposta comercial aprovada. A ficha anterior de prospecção relatou Maps 5,0/8, sem revalidação nesta sessão.
+## Pendências antes de transformar em site oficial
+
+- Substituir as imagens conceituais por fotos aprovadas do ateliê e dos trabalhos.
+- Confirmar o número de WhatsApp do CTA. O link usa o telefone publicado na ficha de Maps, ainda sem correspondência confirmada com a conversa específica.
+- Confirmar disponibilidade atual, valores, condições, endereço, calendário e instruções de retirada.
+- Confirmar identidade visual e o que deve acontecer depois do primeiro contato.
+
+Este é um protótipo conceitual público, não o site oficial ou uma proposta comercial aprovada.
