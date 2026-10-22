@@ -1,0 +1,4 @@
+const choices=[...document.querySelectorAll('[data-theme-choice]')];
+choices.forEach(button=>button.addEventListener('click',()=>{document.body.dataset.theme=button.dataset.themeChoice;choices.forEach(choice=>{const selected=choice===button;choice.classList.toggle('selected',selected);choice.setAttribute('aria-pressed',String(selected));});}));
+const filters=[...document.querySelectorAll('[data-filter]')],pieces=[...document.querySelectorAll('[data-category]')];
+filters.forEach(button=>button.addEventListener('click',()=>{const filter=button.dataset.filter;filters.forEach(choice=>{const selected=choice===button;choice.classList.toggle('active',selected);choice.setAttribute('aria-pressed',String(selected));});pieces.forEach(piece=>piece.hidden=filter!=='todos'&&piece.dataset.category!==filter);}));
